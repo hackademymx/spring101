@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+    <!--  <bean id="..." class="...">  
+        !- colaboradores y configuraciones del bean van aquí -
+    </bean> -->
+
+    <bean id="helloWorld" class="lat.futuredevelopers.demo.HelloWorld">
+    	<property name="mensaje" value="Hola Mundo, set"></property>
+        <!-- colaboradores y configuraciones addicionales del bean van aquí -->
+    </bean>
+
+    <bean id="helloWorldConstructor" class="lat.futuredevelopers.demo.HelloWorld">
+    	<constructor-arg value="Hola Mundo, constructor" />
+ 	    <!-- colaboradores y configuraciones addicionales del bean van aquí -->
+    </bean>
+
+
+    <!-- definiciones de mas bean van aquí -->
+
+</beans>     

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+    <bean id="payment" class="lat.futuredevelopers.beans.CashPayment" />
+
+    <bean id="payServiceBean" class="lat.futuredevelopers.beans.PayServiceImpl" autowire="byType">
+    	<property name="amount" value="20" />
+    </bean>
+
+</beans>
